@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+
+
+    <h1>Quote Of The Day</h1>
+    <form action="/next" method="post">
+        <div class="container">
+            <h2>
+                " <%= quote %> "
+            </h2>
+            <h3>
+                -<%= author %>
+            </h3>
+
+        </div>
+        <button type="submit" action="post">Next</button>
+
+    </form>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
